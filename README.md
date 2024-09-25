@@ -3,23 +3,18 @@
 
 This project generates synthetic resumes using Golang and runs inside a Docker container.
 
-## Prerequisites
-
-- Docker installed on your machine
-- Go (Golang) installed on your machine (for local development)
-
 ## Project Structure
 
 ```
 resume-generator/
-├── Dockerfile       # Docker configuration file
-├── main.go          # Go application code to generate resumes
-└── README.md        # This file
+├── Dockerfile      
+├── main.go         
+└── README.md       
 ```
 
 ## Getting Started
 
-### Step 1: Build the Docker Image
+### Build the Docker Image
 
 To build the Docker image, run the following command in the project directory:
 
@@ -29,21 +24,9 @@ docker build -t resume-generator .
 
 This will build the Docker image with the Go application inside.
 
-### Step 2: Running the Docker Container
+### Running the Docker Container
 
-To run the Docker container and execute the Go application, you have two options:
-
-#### Option 1: Run Without Volume Mounting
-
-This option runs the container using the binary built during the image build process:
-
-```bash
-docker run resume-generator
-```
-
-#### Option 2: Run With Volume Mounting
-
-If you'd like to mount the current directory (for example, to save the `resume.json` file directly to your host machine), use the following steps:
+To run the Docker container and execute the Go application:
 
 1. **Run the container interactively**:
    ```bash
@@ -64,9 +47,9 @@ If you'd like to mount the current directory (for example, to save the `resume.j
 
    This will run the application and either print the synthetic resume to the console or save it as a file (depending on the application logic).
 
-### Step 3: Copy Generated Resume (Optional)
+### Step 3: Copy Generated Resume
 
-If the Go application saves the resume to a file (e.g., `resume.json`), you can copy the file from the container to your local machine using:
+You can copy the file from the container to your local machine using:
 
 ```bash
 docker cp <container_id>:/app/resume.json .
