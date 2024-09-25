@@ -1,0 +1,22 @@
+{
+  "name": "Emily Davis",
+  "email": "Emily Davis@test.com",
+  "phone": "(454) 327-7084",
+  "experience": [
+    "Backend Developer at 123 Tech",
+    "Systems Analyst at DEF Ltd."
+  ],
+  "skills": [
+    "Docker",
+    "ReactJS",
+    "ReactJS",
+    "ReactJS",
+    "PostgreSQL",
+    "ReactJS"
+  ],
+  "education": "Bachelor of Science in Computer Science",
+  "certifications": [
+    "AWS Certified Solutions Architect",
+    "Certified Kubernetes Administrator"
+  ]
+}
